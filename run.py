@@ -172,3 +172,54 @@ def play_game():
         if count_hits(player) == 4 or count_hits(player_guesses) == 4:
             turn = 10
     winner_check_final()
+
+
+    # The check_valid_input function takes in a user input value and checks if it's
+# within the range of 1 to 5 (inclusive).If the value is outside of this range,
+# the function raises a ValueError with a message, "Invalid input! Choose a
+# number between 1 and 5.". The error message is then caught in a try-except
+# block and printed to the user with the message, "Error: [error message].
+# Please enter an integer between 1 and 5.". Finally, the function returns
+# False to indicate that the input was invalid. If the input is within the
+# range, the function returns True to indicate that the input is valid.
+def check_valid_input(value):
+    try:
+        if not 1 <= int(value) <= 5:
+            raise ValueError("Invalid input! Choose a number between 1 and 5.")
+    except ValueError as error:
+        print(f"Error: {error}")
+        print("Please enter an integer between 1 and 5.")
+        return False
+    return True
+
+
+# count_hits takes a board as an argument, which is expected to be a list
+# representing the player's board. The function counts the number of times the
+# string "#" appears in the board, which represents a hit battleship.
+# The function returns the sum of all the "#" counts.
+def count_hits(board):
+    return sum(row.count(" # ") for row in board)
+
+
+# check_winner checks if there is a winner after ten turns of the game.
+# It calls the count_hits function to find the number of hits for the player
+# and the opponent, stored in the variables player_hits and opponent_hits
+# respectively. The function then compares the two counts and prints a message
+# indicating the result of the game. If the number of hits for the player is
+# greater than that of the opponent, the player wins. If the number of hits for
+# the opponent is greater, the opponent wins. If the number of hits for both
+# players is the same, it's a tie.
+def winner_check_final():
+    player_hits = count_hits(player_guesses)
+    opponent_hits = count_hits(opponent)
+    if player_hits > opponent_hits:
+        print("Congratulations! You WIN! 🥳")
+    elif player_hits < opponent_hits:
+        print("Sorry, the opponent had more hits! 😔")
+    else:
+        print("It was a tie!")
+
+
+# Finally, the code calls the play_game function, which is the main function
+# for playing the game.
+play_game()
