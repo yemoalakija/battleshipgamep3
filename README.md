@@ -1,40 +1,153 @@
-# Game Introduction
+
+
+# TABLE OF CONTENT
+
+1. <a href= "#about-this-website">ABOUT THIS WEBSITE</a>
+
+2. <a href= "#how-to-play">HOW-TO-PLAY</a>
+
+3. <a href= "#user-experience-ux">USER EXPERIENCE (UX)</a>
+
+    - <a href= "#user-stories">User Stories</a>
+
+4. <a href= "#features">FEATURES</a>
+
+    <a href= "#future-features">Future Features</a>
+
+5. <a href ="#testing">TESTING</a>
+
+    - <a href ="#validator-testing">PEP8 Validator Testing</a> 
+
+    - <a href ="#browser-compatibility">Browser Compatibility</a>
+
+    - <a href ="#fixed-bugs">Fixed Bugs</a>
+
+6. <a href= "#technologies-used">TECHNOLOGIES USED></a>
+
+7. <a href= "#deployment">DEPLOYMENT</a>
+
+    - <a href= "#how-to-create-a-local-clone-of-this-project">How to create a local clone of this project</a>
+
+8. <a href= "#credit">CREDIT</a>
+
+9. <a href= "#acknowledgement">ACKNOWLEDGEMENT</a> 
+
+---
+
+
+# BATTLE SHIP GAME P3
+
+## ABOUT THIS WEBSITE
 
 Battleships is a classic two-player strategy game where each player has a fleet of ships and they take turns guessing the coordinates to try and sink their opponent's ships. The objective of the game is to sink all of your opponent's ships before they sink all of yours. The game is played on a grid where each player secretly places their ships. The players then take turns guessing the coordinates of the other player's ships, marking a hit or a miss on their own grid. The first player to sink all of their opponent's ships wins the game.
 
-## Details
 
-The details of the code behind the game is very well documented in the game.
+Here is the link to the website: [Battle Ship Game P3](https://battleshipgamep3.herokuapp.com/)
 
-## Features
 
-The game can be played between multiple players. But this version was design to play with the computer as the opponent.
-More features to be added in the future.
+![mediascreensizes](images/battle%20mediascreens.png)
 
-## Technical details
+## HOW TO PLAY
 
-The game runs pretty cool on terminal: Windows, macOS, Linux as well as mobile devices.
+-The aim of the game is to sink the enemy battleship that is hidden, by guessing row and column coordinates each turn. 
+- Player inputs his or her name and the game starts.
+- In this Battleship Game, there is a single ship hidden in a random location on a 5x5 grid. 
+- The player will have 10 guesses to try to sink the ship
+- The columns are numbers (1, 2, 3, 4, 5) and rows are numbers (1, 2, 3, 4, 5). 
 
-Graphics used was 2-dimension.
+## USER EXPERIENCE (UX)
 
-## Screenshot
+### User Stories 
 
-![mediascreensize](screenshot.png)
+- As a user I want to be able to play the battleship game.
+- As a user I want to be able to clone this game. 
 
-## Contributions
+### Design 
 
-The game is open to contributors that have special addings to make on it.
+## FEATURES
 
-## License
+There is a system in place that prevents the player from attacking their own ship, selecting an already entered coordinate either by the player or enemy or selecting an invalid number. 
 
-No License per say.
+The computer is also prevented from selecting an invalid or already entered coordinate. In the event the player sinks the enemy ship first, they win, and the game tells the user how many attempts it took for the player to win. If the enemy wins then the game tells you how many attempts it took the computer to win. 
 
-## Future Development
+Termcolor has also been installed to
 
-I planned to make it even more better in the future.
 
-## Contact
 
-You can contact me: <https://github.com/yemoalakija>
 
-Thank you for checking out my game out.
+
+### Future Features
+
+Additional features in the near future shall include information on Michael Jordan's charity programmes and merchandizing. 
+
+## TESTING
+
+This website was tested using CI Python Linter Validator by Code Institute 
+
+### Validator Testing 
+
+- PEP8 Validator 
+There were no errors found as seen here: 
+
+![CI Python Linter](images/PEP8.png)
+
+### Responsiveness Test
+
+The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/). 
+The following devices were all tested and passed: Desktop 15-24", Galaxy S5-S7, Galaxy A, iPhone 3-7, Sony Z2-Z3, iPad and iPad Mini
+
+### Browser Compatibility
+
+The Game was succcesfully tested on the following browsers and there no errors found. Google Chrome, Microsoft Edge and Mozilla Firefox. Responsiveness were consistent on all above mentioned browsers and devices.
+
+### Fixed Bugs
+
+No bugs found  
+
+## TECHNOLOGIES USED
+
+- HTML5 - provides the structure and content for the website.
+- Gitpod - workstation used for creating game in run.py file.
+- Github - used for hosting and editing the website.
+- Heroku - used for deployment of the game 
+
+
+## DEPLOYMENT
+
+The Game was deployed on Heroku. The steps to deploy are as follows:
+
+Config Vars and buildpacks heroku/python and heroku/nodejs were added in Heroku settings:
+
+![Convig Vars and Buildpacks](images/buildpacks%20and%20config%20vars.png)
+
+In the "deploy" section, Github was connected to Heroku and then Game deployed.
+
+![Deployment](images/heroku1.png)
+![Deployment](images/heroku2.png)
+![Deployment](images/heroku3.png)
+
+
+Here is the live link: - [Battle Ship Game P3](https://yemoalakija.github.io/battleshipgamep3/)
+
+This Game is deployed on Heroku and therefore the live link on Github opens the README information. 
+
+![Readme dep link](images/readme%20dep%20link.png)
+
+### How to create a local clone of this project
+
+Acces Github and follow below instructions:
+
+- STEP 1 - Click on the code tab, under repository name. 
+- STEP 2 - Click on the clipboard icon to copy URL. 
+- STEP 3 - Open Git Bash in your chosen IDE. 
+- STEP 4 - Change clone directory location.
+- STEP 5 - Type git clone, and then paste the URL copied from GitHub.
+
+## CREDIT
+
+- [I AM RESPONSIVE](https://amiresponsive.co.uk/) - Used for media screens 
+
+
+## ACKNOWLEDGEMENT 
+
+This website was completed in accordance with the criteria for Portfolio 1 Project of The Full Stack Software Developer Diploma at the Code Institute. My special gratitude goes to everyone that has made this project successful including my mentor Precious Ijege, the Slack community (particularly Shaun Buck and Kera Cudmore) and the entire Code Institute for their support and assistance. 
