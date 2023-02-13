@@ -1,31 +1,40 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Game Introduction
 
-Welcome yemoalakija,
+Battleships is a classic two-player strategy game where each player has a fleet of ships and they take turns guessing the coordinates to try and sink their opponent's ships. The objective of the game is to sink all of your opponent's ships before they sink all of yours. The game is played on a grid where each player secretly places their ships. The players then take turns guessing the coordinates of the other player's ships, marking a hit or a miss on their own grid. The first player to sink all of their opponent's ships wins the game.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Details
 
-## Reminders
+The details of the code behind the game is very well documented in the game.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Features
 
-## Creating the Heroku app
+The game can be played between multiple players. But this version was design to play with the computer as the opponent.
+More features to be added in the future.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Technical details
 
-1. `heroku/python`
-2. `heroku/nodejs`
+The game runs pretty cool on terminal: Windows, macOS, Linux as well as mobile devices.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+Graphics used was 2-dimension.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Screenshot
 
-Connect your GitHub repository and deploy as normal.
+![mediascreensize](screenshot.png)
 
-## Constraints
+## Contributions
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+The game is open to contributors that have special addings to make on it.
 
------
-Happy coding!
+## License
+
+No License per say.
+
+## Future Development
+
+I planned to make it even more better in the future.
+
+## Contact
+
+You can contact me: <https://github.com/yemoalakija>
+
+Thank you for checking out my game out.

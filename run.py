@@ -16,7 +16,7 @@ def battle_ground():
         row = [" X "] * 5
         field.append(row)
     return field
-    
+
 
 # This function print the battlefield takes a 2-dimenstional list "field" as
 # an argument and prints it to the console. The for loop runs over each row in
