@@ -174,7 +174,7 @@ def play_game():
     winner_check_final()
 
 
-    # The check_valid_input function takes in a user input value and checks if it's
+# The check_valid_input function takes in a user input value and checks if it's
 # within the range of 1 to 5 (inclusive).If the value is outside of this range,
 # the function raises a ValueError with a message, "Invalid input! Choose a
 # number between 1 and 5.". The error message is then caught in a try-except
