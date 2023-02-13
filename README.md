@@ -10,6 +10,8 @@
 
     - <a href= "#user-stories">User Stories</a>
 
+    - <a href= "#design">Design</a>
+
 4. <a href= "#features">FEATURES</a>
 
     <a href= "#future-features">Future Features</a>
@@ -50,9 +52,16 @@ Here is the link to the website: [Battle Ship Game P3](https://battleshipgamep3.
 ## HOW TO PLAY
 
 -The aim of the game is to sink the enemy battleship that is hidden, by guessing row and column coordinates each turn. 
+
 - Player inputs his or her name and the game starts.
+
+![Lauching](images/launching.png)
+
 - In this Battleship Game, there is a single ship hidden in a random location on a 5x5 grid. 
 - The player will have 10 guesses to try to sink the ship
+
+![opponent](images/opponent.png)
+![player](images/player.png)
 - The columns are numbers (1, 2, 3, 4, 5) and rows are numbers (1, 2, 3, 4, 5). 
 
 ## USER EXPERIENCE (UX)
@@ -64,21 +73,21 @@ Here is the link to the website: [Battle Ship Game P3](https://battleshipgamep3.
 
 ### Design 
 
+Termcolor was installed in gitpod application for this game to enhance user experience. 
+
+See below game structure and layout:
+
+![Design field](images/design%20field.png)
+
 ## FEATURES
 
 There is a system in place that prevents the player from attacking their own ship, selecting an already entered coordinate either by the player or enemy or selecting an invalid number. 
 
 The computer is also prevented from selecting an invalid or already entered coordinate. In the event the player sinks the enemy ship first, they win, and the game tells the user how many attempts it took for the player to win. If the enemy wins then the game tells you how many attempts it took the computer to win. 
 
-Termcolor has also been installed to
-
-
-
-
-
 ### Future Features
 
-Additional features in the near future shall include information on Michael Jordan's charity programmes and merchandizing. 
+Additional features in the near future shall include more colunms, rows and attempts to make users play time duration longer. 
 
 ## TESTING
 
@@ -107,7 +116,7 @@ No bugs found
 ## TECHNOLOGIES USED
 
 - HTML5 - provides the structure and content for the website.
-- Gitpod - workstation used for creating game in run.py file.
+- Gitpod - workspaces used for creating game in run.py file.
 - Github - used for hosting and editing the website.
 - Heroku - used for deployment of the game 
 
@@ -145,9 +154,11 @@ Acces Github and follow below instructions:
 
 ## CREDIT
 
-- [I AM RESPONSIVE](https://amiresponsive.co.uk/) - Used for media screens 
+- [I Am Responsive](https://amiresponsive.co.uk/) - Used for media screens 
+- [CI Python Linter](https://pep8ci.herokuapp.com/) - Used for python validator 
+- [Heroku](https://heroku.com) - Used to deploy Battleship Game.
 
 
 ## ACKNOWLEDGEMENT 
 
-This website was completed in accordance with the criteria for Portfolio 1 Project of The Full Stack Software Developer Diploma at the Code Institute. My special gratitude goes to everyone that has made this project successful including my mentor Precious Ijege, the Slack community (particularly Shaun Buck and Kera Cudmore) and the entire Code Institute for their support and assistance. 
+This website was completed in accordance with the criteria for Portfolio 3 Project of The Full Stack Software Developer Diploma at the Code Institute. 
