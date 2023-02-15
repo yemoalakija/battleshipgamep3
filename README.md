@@ -37,14 +37,14 @@
 ---
 
 
-# BATTLE SHIP GAME P3
+# BATTLESHIP GAME P3
 
 ## ABOUT THIS WEBSITE
 
-Battleships is a classic two-player strategy game where each player has a fleet of ships and they take turns guessing the coordinates to try and sink their opponent's ships. The objective of the game is to sink all of your opponent's ships before they sink all of yours. The game is played on a grid where each player secretly places their ships. The players then take turns guessing the coordinates of the other player's ships, marking a hit or a miss on their own grid. The first player to sink all of their opponent's ships wins the game.
+Battleship Game P3 is a classic two-player strategy game where each player has a fleet of ships and they take turns guessing the coordinates to try and sink their opponent's ships. The objective of the game is to sink all of your opponent's ships before they sink all of yours. The game is played on a grid where each player secretly places their ships. The players then take turns guessing the coordinates of the other player's ships, marking a hit or a miss on their own grid. The first player to sink all of their opponent's ships wins the game.
 
 
-Here is the link to the website: [Battle Ship Game P3](https://battleshipgamep3.herokuapp.com/)
+Here is the link to the website: [BattleShip Game P3](https://battleshipgamep3.herokuapp.com/)
 
 
 ![mediascreensizes](images/battle%20mediascreens.png)
@@ -55,14 +55,18 @@ Here is the link to the website: [Battle Ship Game P3](https://battleshipgamep3.
 
 - Player inputs his or her name and the game starts.
 
-![Lauching](images/launching.png)
+![Launching](images/launching.png)
 
 - In this Battleship Game, there is a single ship hidden in a random location on a 5x5 grid. 
 - The player will have 10 guesses to try to sink the ship
 
 ![opponent](images/opponent.png)
+
 ![player](images/player.png)
+
 - The columns are numbers (1, 2, 3, 4, 5) and rows are numbers (1, 2, 3, 4, 5). 
+
+- The player can click on the red button at the top left-hand corner named "RUN PROGRAM" to refresh or restart the game at anytime. 
 
 ## USER EXPERIENCE (UX)
 
@@ -84,6 +88,7 @@ See below game structure and layout:
 There is a system in place that prevents the player from attacking their own ship, selecting an already entered coordinate either by the player or enemy or selecting an invalid number. 
 
 The computer is also prevented from selecting an invalid or already entered coordinate. In the event the player sinks the enemy ship first, they win, and the game tells the user how many attempts it took for the player to win. If the enemy wins then the game tells you how many attempts it took the computer to win. 
+
 
 ### Future Features
 
@@ -125,18 +130,24 @@ No bugs found
 
 The Game was deployed on Heroku. The steps to deploy are as follows:
 
-Config Vars and buildpacks heroku/python and heroku/nodejs were added in Heroku settings:
+- Clone this repository 
+
+- Create a new Heroku app
+
+ - Add Config Vars and buildpacks heroku/python and heroku/nodejs in Heroku settings:
 
 ![Convig Vars and Buildpacks](images/buildpacks%20and%20config%20vars.png)
 
-In the "deploy" section, Github was connected to Heroku and then Game deployed.
+- In the "deploy" section, connect Github to Heroku and then Game deployed.
 
 ![Deployment](images/heroku1.png)
+
 ![Deployment](images/heroku2.png)
+
 ![Deployment](images/heroku3.png)
 
 
-Here is the live link: - [Battle Ship Game P3](https://yemoalakija.github.io/battleshipgamep3/)
+Here is the live link: - [BattleShip Game P3](https://yemoalakija.github.io/battleshipgamep3/)
 
 This Game is deployed on Heroku and therefore the live link on Github opens the README information. 
 
